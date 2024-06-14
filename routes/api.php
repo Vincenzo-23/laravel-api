@@ -20,3 +20,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/projects', [ProjectController::class, 'index']);
+
+
+// imposto la rotta parametrica utilizzando l'id come parametro dinamico
+Route::get('/projects/{projects}', [ProjectController::class, 'show']);
